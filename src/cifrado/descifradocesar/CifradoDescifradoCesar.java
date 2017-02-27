@@ -17,7 +17,7 @@ public class CifradoDescifradoCesar {
         //lectura de lo que se desea hacer
         String accion = teclado.nextLine();
         //se mira si quiere Cifrar o Descifrar
-        if("descifrar".equals(accion) || "Descifrar".equals(accion)){
+        if("cifrar".equals(accion) || "Cifrar".equals(accion)){
             //usuario ingresa la palabra cifrada
             System.out.print("Cual es la palabra a descifrar? ");
             String palabra= teclado.nextLine();
@@ -38,11 +38,12 @@ public class CifradoDescifradoCesar {
                         //formula para saber la pocision equivalente a la letra
                         numeroDescifrado=(clave+posicion)%abecedario.length;
                         System.out.print(abecedario[numeroDescifrado]);
+                        System.out.print(" ");
                     }
                 }
             }
         }
-        if("cifrar".equals(accion) || "Cifrar".equals(accion)){
+        if("descifrar".equals(accion) || "Descifrar".equals(accion)){
             //usuario ingresa la palabra cifrada
             System.out.print("Cual es la palabra a Cifrar? ");
             String palabra= teclado.nextLine();
@@ -67,6 +68,7 @@ public class CifradoDescifradoCesar {
                             numeroCifrado*=-1;
                         }
                         System.out.print(abecedario[numeroCifrado]);
+                        System.out.print(" ");
                     }
                 }
             }
