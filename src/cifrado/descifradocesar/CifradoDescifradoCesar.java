@@ -38,7 +38,6 @@ public class CifradoDescifradoCesar {
                         //formula para saber la pocision equivalente a la letra
                         numeroDescifrado=(clave+posicion)%abecedario.length;
                         System.out.print(abecedario[numeroDescifrado]);
-                        System.out.print(" ");
                     }
                 }
             }
@@ -68,11 +67,11 @@ public class CifradoDescifradoCesar {
                             numeroCifrado*=-1;
                         }
                         System.out.print(abecedario[numeroCifrado]);
-                        System.out.print(" ");
                     }
                 }
             }
         }
+        System.out.print(' ');
     }
 
     public static void main(String[] args) {
